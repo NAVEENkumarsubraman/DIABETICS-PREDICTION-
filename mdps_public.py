@@ -5,16 +5,7 @@ from streamlit_option_menu import option_menu
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
 
-with st.sidebar:
-    
-    selected = option_menu('Multiple Disease Prediction System',
-                          
-                          ['Diabetes Prediction',
-                        ],
-                          icons=['activity','heart','person'],
-                          default_index=0)
-    
-    
+
 if (selected == 'Diabetes Prediction'):
     
     # page title
